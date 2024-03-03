@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on HiwiK</title><link>/categories/ai/</link><description>Recent content in AI on HiwiK</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Hong Sikun</copyright><lastBuildDate>Sun, 03 Mar 2024 10:05:05 +0800</lastBuildDate><atom:link href="/categories/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>stable-diffusion-webui 本地部署</title><link>/hiwikhome/stable-diffusion-webui/</link><pubDate>Sun, 03 Mar 2024 10:05:05 +0800</pubDate><guid>/hiwikhome/stable-diffusion-webui/</guid><description>&lt;img src="/hiwikhome/stable-diffusion-webui/post.png" alt="Featured image of post stable-diffusion-webui 本地部署" />&lt;h2 id="-前置准备">🎨 前置准备&lt;/h2>
+&lt;p>在开始部署之前，确保你的系统已经安装了以下必要的软件和工具：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Git&lt;/strong> - 用于克隆stable-diffusion-webui的仓库。可以从&lt;a class="link" href="https://git-scm.com/downloads" target="_blank" rel="noopener"
+>Git官方下载页面&lt;/a>下载适合你操作系统的版本。&lt;/li>
+&lt;li>&lt;strong>Python 3.10.6&lt;/strong> - stable-diffusion-webui的运行需要依赖Python。请从&lt;a class="link" href="https://www.python.org" target="_blank" rel="noopener"
+>Python官网&lt;/a>下载并安装Python 3.10.6版本，安装时勾选&lt;strong>Add to PATH&lt;/strong>选项。&lt;/li>
+&lt;li>&lt;strong>CUDA&lt;/strong> - 使用GPU加速，需要安装NVIDIA的CUDA工具包。具体版本和安装步骤请参考&lt;a class="link" href="https://developer.nvidia.com/cuda-toolkit" target="_blank" rel="noopener"
+>NVIDIA官方文档&lt;/a>。&lt;/li>
+&lt;/ol>
+&lt;h2 id="-部署步骤">🔌 部署步骤&lt;/h2>
+&lt;ol>
+&lt;li>打开命令提示符（或终端），使用git命令克隆stable-diffusion-webui项目&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>clone 完成后，进入项目目录，运行&lt;code>webui-user.bat&lt;/code>文件启动webui&lt;/li>
+&lt;li>启动成功
+&lt;img src="/hiwikhome/stable-diffusion-webui/photo1.png"
+width="2560"
+height="543"
+srcset="/hiwikhome/stable-diffusion-webui/photo1_hu7236033feaa4375a9af7fc9b6b9799dc_61993_480x0_resize_box_3.png 480w, /hiwikhome/stable-diffusion-webui/photo1_hu7236033feaa4375a9af7fc9b6b9799dc_61993_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="photo1"
+class="gallery-image"
+data-flex-grow="471"
+data-flex-basis="1131px"
+>&lt;/li>
+&lt;/ol>
+&lt;h2 id="-切换镜像源">💽 切换镜像源&lt;/h2>
+&lt;ul>
+&lt;li>为了加快Python包的下载速度，可以切换到国内的镜像源：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">pip config &lt;span class="nb">set&lt;/span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>如果你在连接时遇到网络问题，可以考虑设置网络代理&lt;/li>
+&lt;/ul>
+&lt;h2 id="-安装汉化语言包">🅰 安装汉化语言包&lt;/h2>
+&lt;p>stable-diffusion-webui支持通过扩展来安装汉化语言包，以下是具体的操作步骤：&lt;/p>
+&lt;ol>
+&lt;li>启动stable-diffusion-webui后，进入&amp;quot;Extensions&amp;quot;选项卡。&lt;/li>
+&lt;li>点击&amp;quot;Install from URL&amp;quot;，在&amp;quot;URL for extension&amp;rsquo;s git repository&amp;quot;输入框中，粘贴或输入汉化包的Git仓库地址&lt;code>https://github.com/VinsonLaro/stable-diffusion-webui-chinese&lt;/code>。&lt;/li>
+&lt;li>点击下方的黄色&amp;quot;Install&amp;quot;按钮完成安装，随后需要重启WebUI。点击&amp;quot;Installed&amp;quot;选项，然后点击&amp;quot;Apply and restart UI&amp;quot;，最后点击网页下方的&amp;quot;Reload UI&amp;quot;完成重启。&lt;/li>
+&lt;li>进入&amp;quot;Settings&amp;quot;，在左侧找到&amp;quot;User interface&amp;quot;选项，在页面最下方找到&amp;quot;Localization (requires restart)&amp;quot;，选择&amp;quot;Chinese-All&amp;quot;或者&amp;quot;Chinese-English&amp;quot;。&lt;/li>
+&lt;li>点击页面最上方的黄色&amp;quot;Apply settings&amp;quot;按钮，然后点击右侧的&amp;quot;Reload UI&amp;quot;完成汉化。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="/hiwikhome/stable-diffusion-webui/photo2.png"
+width="2529"
+height="1241"
+srcset="/hiwikhome/stable-diffusion-webui/photo2_hu188f95d5b808437f3094ceed6982a95c_116315_480x0_resize_box_3.png 480w, /hiwikhome/stable-diffusion-webui/photo2_hu188f95d5b808437f3094ceed6982a95c_116315_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="photo2"
+class="gallery-image"
+data-flex-grow="203"
+data-flex-basis="489px"
+>&lt;/p></description></item></channel></rss>
