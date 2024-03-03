@@ -56,9 +56,8 @@ data-flex-basis="1131px"
 &lt;li>点击&amp;quot;Install from URL&amp;quot;，在&amp;quot;URL for extension&amp;rsquo;s git repository&amp;quot;输入框中，粘贴或输入汉化包的Git仓库地址&lt;code>https://github.com/VinsonLaro/stable-diffusion-webui-chinese&lt;/code>。&lt;/li>
 &lt;li>点击下方的黄色&amp;quot;Install&amp;quot;按钮完成安装，随后需要重启WebUI。点击&amp;quot;Installed&amp;quot;选项，然后点击&amp;quot;Apply and restart UI&amp;quot;，最后点击网页下方的&amp;quot;Reload UI&amp;quot;完成重启。&lt;/li>
 &lt;li>进入&amp;quot;Settings&amp;quot;，在左侧找到&amp;quot;User interface&amp;quot;选项，在页面最下方找到&amp;quot;Localization (requires restart)&amp;quot;，选择&amp;quot;Chinese-All&amp;quot;或者&amp;quot;Chinese-English&amp;quot;。&lt;/li>
-&lt;li>点击页面最上方的黄色&amp;quot;Apply settings&amp;quot;按钮，然后点击右侧的&amp;quot;Reload UI&amp;quot;完成汉化。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="/hiwikhome/stable-diffusion-webui/photo2.png"
+&lt;li>点击页面最上方的黄色&amp;quot;Apply settings&amp;quot;按钮，然后点击右侧的&amp;quot;Reload UI&amp;quot;完成汉化。
+&lt;img src="/hiwikhome/stable-diffusion-webui/photo2.png"
 width="2529"
 height="1241"
 srcset="/hiwikhome/stable-diffusion-webui/photo2_hu188f95d5b808437f3094ceed6982a95c_116315_480x0_resize_box_3.png 480w, /hiwikhome/stable-diffusion-webui/photo2_hu188f95d5b808437f3094ceed6982a95c_116315_1024x0_resize_box_3.png 1024w"
@@ -67,7 +66,8 @@ alt="photo2"
 class="gallery-image"
 data-flex-grow="203"
 data-flex-basis="489px"
->&lt;/p></description></item><item><title>Hugo 使用指南</title><link>/hiwikhome/hugoguide/</link><pubDate>Tue, 27 Feb 2024 21:54:28 +0800</pubDate><guid>/hiwikhome/hugoguide/</guid><description>&lt;img src="/hiwikhome/hugoguide/post.png" alt="Featured image of post Hugo 使用指南" />&lt;h1 id="-hugo文章创建">🍤 Hugo文章创建&lt;/h1>
+>&lt;/li>
+&lt;/ol></description></item><item><title>Hugo 使用指南</title><link>/hiwikhome/hugoguide/</link><pubDate>Tue, 27 Feb 2024 21:54:28 +0800</pubDate><guid>/hiwikhome/hugoguide/</guid><description>&lt;img src="/hiwikhome/hugoguide/post.png" alt="Featured image of post Hugo 使用指南" />&lt;h1 id="-hugo文章创建">🍤 Hugo文章创建&lt;/h1>
 &lt;p>在Hugo中创建文章时，你可以在文章的前言（Front Matter）中定义多种属性，以控制文章的各种设置和行为。Front Matter是位于Markdown文件顶部的区域，用于存储元数据，如标题、日期、描述等。Hugo 支持 YAML、TOML 和 JSON 格式的 Front Matter。下面是一些常见属性及其说明：&lt;/p>
 &lt;h2 id="基本属性">基本属性&lt;/h2>
 &lt;ul>
